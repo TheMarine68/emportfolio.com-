@@ -1,0 +1,97 @@
+.main-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    float: right;
+    }
+
+header {
+  background-color: #070A52;
+  color: white;
+  text-align: center;
+  padding: 30px;  
+  text-shadow: 2px 2px #white;
+  box-shadow: 5px 5px black;
+    }
+
+body {
+  background-image: linear-gradient(red, yellow);
+  background-position: center;
+  color: white;
+  text-align: left;
+  padding: 30px;
+}
+
+contact {
+  background-color: #070A52;
+}
+
+h2 {
+  text-align:center;
+  font-family:arial;
+  text-shadow: 2px 2px #ff0000;
+}
+
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #DF8453;
+  --color-2: #3D8DAE;
+  --color-3: #E4A9A8;
+}
+
+.title-word-2 {
+  --color-1: #DBAD4A;
+  --color-2: #ACCFCB;
+  --color-3: #17494D;
+}
+
+.title-word-3 {
+  --color-1: #ACCFCB;
+  --color-2: #E4A9A8;
+  --color-3: #ACCFCB;
+}
+
+.title-word-4 {
+  --color-1: #3D8DAE;
+  --color-2: #DF8453;
+  --color-3: #E4A9A8;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+
+.focus-example {
+  border-color: #fff !important;
+  transition: all 0.5s ease-out;
+}
+
+.focus-example::placeholder {
+  font-style: italic;
+  font-variant: small-caps;
+  color: rgb(138, 43, 226);
+}
+
+.focus-example:focus {
+  border-color: rgb(70, 70, 185) !important;
+  transition: all 0.5s ease-out;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 3px;
+  background-color: #95BDFF;
+  color: white;
+}
