@@ -15,34 +15,6 @@ body {
   padding: 30px;
 }
 
-contact {
-  background-color: #070A52;
-}
-
-h2 {
-  text-align:center;
-  font-family:arial;
-  text-shadow: 2px 2px #ff0000;
-}
-.flipX {
-  animation: 1s anim-flipX ease infinite;
-}
-@keyframes anim-flipX {
-  0% {
-    opacity: 0;
-    transform: rotateX(90def);
-  }
-  50% {
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
-  100% {
-    /* animate nothing to pause animation at the end */
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
-}
-
 .animated-background {
   width: 100%;
   height: 100vh;
@@ -68,6 +40,43 @@ h2 {
   }
   100% {
     background-color: red;
+  }
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+contact {
+  background-color: #070A52;
+}
+
+h2 {
+  text-align:center;
+  font-family:arial;
+  text-shadow: 2px 2px #ff0000;
+}
+.flipX {
+  animation: 1s anim-flipX ease infinite;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
   }
 }
 
@@ -123,6 +132,34 @@ h2 {
 .focus-example:focus {
   border-color: rgb(70, 70, 185) !important;
   transition: all 0.5s ease-out;
+}
+
+.animated-background {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: backgroundAnimation 10s infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  75% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: red;
+  }
 }
 
 footer {
