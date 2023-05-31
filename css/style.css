@@ -1,11 +1,9 @@
 header {
-  background-color: #070A52;
   color: white;
   text-align: center;
   padding: 30px;  
-  text-shadow: 2px 2px #white;
-  box-shadow: 5px 5px black;
-    }
+  text-shadow: 5px 5px #white;
+  }
 
 body {
   background-image: linear-gradient(red, yellow);
@@ -23,24 +21,6 @@ h2 {
   text-align:center;
   font-family:arial;
   text-shadow: 2px 2px #ff0000;
-}
-.flipX {
-  animation: 1s anim-flipX ease infinite;
-}
-@keyframes anim-flipX {
-  0% {
-    opacity: 0;
-    transform: rotateX(90def);
-  }
-  50% {
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
-  100% {
-    /* animate nothing to pause animation at the end */
-    opacity: 1;
-    transform: rotateX(720deg);
-  }
 }
 
 .title-word {
@@ -81,22 +61,6 @@ h2 {
   100%  {color: var(--color-1)}
 }
 
-.focus-example {
-  border-color: #fff !important;
-  transition: all 0.5s ease-out;
-}
-
-.focus-example::placeholder {
-  font-style: italic;
-  font-variant: small-caps;
-  color: rgb(138, 43, 226);
-}
-
-.focus-example:focus {
-  border-color: rgb(70, 70, 185) !important;
-  transition: all 0.5s ease-out;
-}
-
 .animated-background {
   width: 100%;
   height: 100vh;
@@ -112,17 +76,22 @@ h2 {
     background-color: red;
   }
   25% {
-    background-color: blue;
-  }
-  50% {
-    background-color: green;
-  }
-  75% {
-    background-color: yellow;
-  }
-  100% {
     background-color: red;
   }
+  50% {
+    background-color: white;
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: 5px 5px black;
 }
 
 footer {
