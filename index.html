@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <!--Meta data-->
   <meta charset="UTF-8">
@@ -18,11 +17,13 @@
   <link rel="stylesheet" href="./style.css">
   <!--Favicon-->
   <link rel="icon" type="image/x-icon" href="https://media.licdn.com/dms/image/C4D03AQEblu3RazuNGw/profile-displayphoto-shrink_200_200/0/1600115780714?e=1688601600&v=beta&t=7F1yR25Y-SalYQqCK0RcWIBNjGjOUWkBfF0LFr4KDtA">
-  </head>
+  </head>  
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <header class="header">
+ <header class="header">
 
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar fixed-top bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">My Portfolio</a>
     <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,20 +32,54 @@
     <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-              <li class="nav-item">
               <a class="nav-link" href="./index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./education.html">EDUCATION</a>
+              <a class="nav-link" href="./work-projects.html">MY PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./work-projects.html">MY WORK/PROJECTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./services.html">SERVICES</a>
-            </li>
+
           </ul>
-          <button class="btn btn-outline-primary mx-3">CONTACT ME</button>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">CONTACT ME</button>
+      
+          <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-floating mb-3">
+  <input
+    type="text"
+    class="form-control"
+    id="floatingInput"
+    placeholder="Full name"
+  >
+  <label for="floatingInput">Full name</label>
+</div>
+<div class="form-floating mb-3">
+  <input
+    type="email"
+    class="form-control"
+    id="floatingInput"
+    placeholder="name@example.com"
+  >
+  <label for="floatingInput">Email address</label>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</div>  
+    </div>
+  </div>
+</div></nav>
+  </header>
       
           <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -113,55 +148,15 @@
 </div>
       <h4>My journey into development begain in 2019 when I took my first development classes in Object oriented programming 1 and 2 in Python while persuing my BS in Information Technology. I than started to look for free sources online to teach me more programming languages where I came across <a target="_blank" href="https://www.codecademy.com/learn">Code Academy.</a> They do a fantastic job in teaching the basics in most programming languages. I was informed that Amazon started a career choice  where they would fund traing for Amazon employees so they can learn valuable skills. Thats when I choose to apply and got accepted to an Amazon Software Developement program with <a target="_blank" href="https://www.correlation-one.com/">Correlation One.</a> I have learned so much from the staff at Collelation One and highly recommened anyone that is interested in learning a valuable skill to apply.</h4>
 
-<div class="container">
-  <h2 class="title">
-    <span class="title-word title-word-1">MY</span>
-    <span class="title-word title-word-2">PROJECTS:</span>
-  </h2>
-</div>
-      <center><h4>You can find my projects by going to the link below. <br> <a href="https://github.com/TheMarine68"><img border="0" alt="W3Schools" src="https://pngimg.com/d/github_PNG15.png" width="200" height="auto"></a></h4>
-
-  <!--Gathering Contact Details-->
-  <form action="/save_data" method="push">
-    <div style="float:center;">
-      <table width="29%" style="background-color:#070A52; margin-left:auto; margin-right:auto; padding-left: 30px">
-        <tr>
-          <td colspan="2" align=center>
-            <h2>Stay in touch!<h2>
-          </td>
-        </tr>
-        <tr>
-          <td align=right style=padding-bottom:20px;><b><label for="fname"> First Name:</label></b></td>
-          <td align=left><input type="text" id="fname" name="fname" class="focus-example" placeholder="Enter First Name"><br><br></td>
-        </tr>
-        <tr>
-          <td align=right style=padding-bottom:20px;><b><label for="lname"> Last Name:</label></b></td>
-          <td align=left><input type="text" id="lname" name="lname" class="focus-example" placeholder="Enter Last Name"><br><br>
-          </td>
-        </tr>            
-        <tr>
-          <td align=right style=padding-bottom:20px;><b><label for="email"> Email:</label></b></td>
-          <td align=left><input type="text" id="email" name="email" class="focus-example" placeholder="Enter Email"><br><br></td>
-        </tr>
-        <tr>
-          <td colspan="2" align=center><input type="submit" value="Save"></td>
-        </tr>
-      </table>
-    </div>
-  </form>
-</body>
-  <br><br>
-
   <footer>
   <table width="100%" cellspacing="0">
     <tr>
       <td>
-        <a target="_blank" href="https://www.linkedin.com/in/earl-miller-50b94448/">Linkedin</a> | <a target="_blank" href="https://www.twitch.tv/themarine68">Twitch</a> | <a target="_blank" href="https://twitter.com/HawkMThe">Twitter</a> | <a target="_blank" href="https://www.facebook.com/TheMarine68">Facebook Gaming Page</a><br>
-        <small>&copy; Copyright 2023, Earl Miller &#129351</small>
+        <a target="_blank" href="https://www.linkedin.com/in/earl-miller-50b94448/">Linkedin</a> | <a target="_blank" href="https://github.com/TheMarine68">Github</a><br>
+        <small>&copy; Copyright 2023, Earl Miller Jr &#129351</small>
       </td>
     </tr>
   </table>
   </footer>
-
 
 </html>
